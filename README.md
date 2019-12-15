@@ -1,6 +1,6 @@
 # tauri-webpack
 
-![](https://img.shields.io/npm/v/@tauri-apps/tauri-webpack.svg) ![](https://img.shields.io/github/workflow/status/tauri-apps/tauri-webpack/sanity%20test%20webpack?label=tests
+![](https://img.shields.io/npm/v/@tauri-apps/tauri-webpack.svg) ![](https://img.shields.io/github/workflow/status/tauri-apps/tauri-webpack/Sanity%20Test?label=tests
 )
 
 The webpack tools currently used by the Tauri `no-server` mode.
