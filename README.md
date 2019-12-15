@@ -26,6 +26,8 @@ tauri: {
 }
 ```
 
+## Please visit https://github.com/tauri-apps/tauri for details about contributing and community.
+
 ## License
 Copyright (c) 2019 Tauri
 MIT
