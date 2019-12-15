@@ -1,3 +1,7 @@
+/**
+ * @module TauriRequirePlugin
+ * @description Webpack tool for loading chunks in tauri
+ */
 module.exports.plugin = class TauriRequirePlugin {
   apply (compiler) {
     compiler.plugin('compilation', function (compilation) {

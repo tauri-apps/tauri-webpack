@@ -1,0 +1,10 @@
+test
+node_modules
+.git
+.github
+.idea
+SECURITY.md
+.env.jest
+.eslintrc.js
+jest.config.js
+renovate.json

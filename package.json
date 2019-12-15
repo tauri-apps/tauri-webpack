@@ -4,27 +4,40 @@
   "description": "Webpack configuration for Tauri.",
   "main": "index.js",
   "scripts": {
+    "test": "jest",
     "lint-fix": "eslint --fix ./plugins/*.js ./*.js",
     "lint:lockfile": "lockfile-lint --path yarn.lock --type yarn --validate-https --allowed-hosts npm yarn"
   },
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/tauri"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tauri-apps/tauri.git"
+    "url": "git+https://github.com/tauri-apps/tauri-webpack.git"
   },
   "keywords": [
     "tauri",
     "webpack"
   ],
-  "author": "Lucas Nogueira <lucas@quasar.dev>",
+  "contributors": [
+    "Tauri Team <team@tauri-apps.org> (https://tauri-apps.org)",
+    "Lucas Fernandes Gonçalves Nogueira <lucas@quasar.dev>",
+    "Daniel Thompson-Yvetot <denjell@sfosc.org>"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tauri-apps/tauri/issues"
+    "url": "https://github.com/tauri-apps/tauri-webpack/issues"
   },
-  "homepage": "https://github.com/tauri-apps/tauri#readme",
+  "homepage": "https://github.com/tauri-apps/tauri-webpack#readme",
   "dependencies": {
-    "webpack-shell-plugin": "^0.5.0"
+    "webpack-shell-plugin": "0.5.0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
+    "dotenv": "8.2.0",
     "eslint": "6.7.2",
     "eslint-config-standard": "14.1.0",
     "eslint-plugin-import": "2.19.1",
@@ -33,7 +46,25 @@
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-security": "1.4.0",
     "eslint-plugin-standard": "4.0.1",
+    "husky": "3.1.0",
+    "jest": "24.9.0",
+    "jest-mock-process": "1.2.0",
     "lint-staged": "9.5.0",
-    "lockfile-lint": "3.0.3"
+    "lockfile-lint": "3.0.3",
+    "promise": "8.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": [
+    "eslint --fix",
+    "git add"
+  ],
+  "engines": {
+    "node": ">= 10.17.0",
+    "npm": ">= 6.6.0",
+    "yarn": ">= 1.19.1"
   }
 }
