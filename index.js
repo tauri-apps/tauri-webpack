@@ -1,10 +1,13 @@
 const chainWebpack = function (chain, config) {
-  const cfg = Object.assign({
-    automaticStart: false,
-    tauriLazyLoading: true
-  }, config)
+  const dev = process.env.NODE_ENV !== 'production'
+  const getTauriConfig = () => require('tauri/helpers/tauri-config')({
+    ctx: {
+      dev,
+      prod: !dev
+    }
+  })
 
-  if (cfg.automaticStart) {
+  if (config && config.automaticStart) {
     const WebpackShellPlugin = require('webpack-shell-plugin')
     chain.plugin('webpack-shell-plugin')
       .use(WebpackShellPlugin, [{
@@ -12,7 +15,7 @@ const chainWebpack = function (chain, config) {
       }])
   }
 
-  if (cfg.tauriLazyLoading) {
+  if (!(dev && getTauriConfig().build.devPath.startsWith('http'))) {
     const TauriRequirePlugin = require('./plugins/tauri-require').plugin
     chain.plugin('tauri-require')
       .use(TauriRequirePlugin)
