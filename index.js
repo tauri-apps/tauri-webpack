@@ -1,6 +1,6 @@
 const chainWebpack = function (chain, config) {
   const dev = process.env.NODE_ENV !== 'production'
-  const getTauriConfig = () => require('tauri/helpers/tauri-config')({
+  const tauriConfig = require('tauri/helpers/tauri-config')({
     ctx: {
       dev,
       prod: !dev
@@ -15,7 +15,7 @@ const chainWebpack = function (chain, config) {
       }])
   }
 
-  if (!(dev && getTauriConfig().build.devPath.startsWith('http'))) {
+  if (!(dev && tauriConfig.build.devPath.startsWith('http')) && !tauriConfig.tauri.embeddedServer.active) {
     const TauriRequirePlugin = require('./plugins/tauri-require').plugin
     chain.plugin('tauri-require')
       .use(TauriRequirePlugin)
