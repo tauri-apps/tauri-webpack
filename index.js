@@ -1,6 +1,6 @@
 const chainWebpack = function (chain, config) {
   const dev = process.env.NODE_ENV !== 'production'
-  const tauriConfig = require('tauri/helpers/tauri-config')({
+  const tauriConfig = require('tauri/dist/tauri-config')({
     ctx: {
       dev,
       prod: !dev
