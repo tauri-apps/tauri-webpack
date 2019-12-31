@@ -1,6 +1,6 @@
 const chainWebpack = function (chain, config) {
   const dev = process.env.NODE_ENV !== 'production'
-  const tauriConfig = require('tauri/helpers/tauri-config')({
+  const tauriConfig = require('tauri/dist/helpers/tauri-config')({
     ctx: {
       dev,
       prod: !dev
@@ -28,5 +28,5 @@ module.exports.config = function (config) {
   const WebpackChain = require('webpack-chain')
   const chain = new WebpackChain()
   chainWebpack(chain, config)
-  return chain.toString()
+  return chain.toConfig()
 }
