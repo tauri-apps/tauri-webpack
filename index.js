@@ -28,5 +28,5 @@ module.exports.config = function (config) {
   const WebpackChain = require('webpack-chain')
   const chain = new WebpackChain()
   chainWebpack(chain, config)
-  return chain.toString()
+  return chain.toConfig()
 }
