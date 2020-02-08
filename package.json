@@ -44,7 +44,7 @@
     "eslint-config-standard": "14.1.0",
     "eslint-plugin-import": "2.19.1",
     "eslint-plugin-lodash-template": "0.15.0",
-    "eslint-plugin-node": "10.0.0",
+    "eslint-plugin-node": "11.0.0",
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-security": "1.4.0",
     "eslint-plugin-standard": "4.0.1",
@@ -52,7 +52,7 @@
     "jest": "24.9.0",
     "jest-mock-process": "1.2.0",
     "lint-staged": "9.5.0",
-    "lockfile-lint": "3.0.4",
+    "lockfile-lint": "3.0.5",
     "promise": "8.0.3"
   },
   "husky": {
