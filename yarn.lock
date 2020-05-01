@@ -2006,13 +2006,13 @@ eslint-plugin-import@2.19.1:
     read-pkg-up "^2.0.0"
     resolve "^1.12.0"
 
-eslint-plugin-lodash-template@0.15.0:
-  version "0.15.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-lodash-template/-/eslint-plugin-lodash-template-0.15.0.tgz#649265456a3ad5345d5bb3a3eeb8995d1d31c877"
-  integrity sha512-OXfUJz3udNAbhOJknp2RGJp1xf3A3CrwHoP31B0sWWrsKEK1fGcoTN8KtUvEenni+oNWe0RFw3sT1cl+/A0oRw==
+eslint-plugin-lodash-template@0.16.0:
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-lodash-template/-/eslint-plugin-lodash-template-0.16.0.tgz#0ae18ca9cc0f3cd58e45ebb7235e6963778aaa8d"
+  integrity sha512-DDHqqfloq67E+hqnneVyA/c5bWwCZqCg5cEWZUwMq4JZouFT/WfkJZz1irqKq3/LaJadwcVw4facNSxCgUF77A==
   dependencies:
     esquery "^1.0.1"
-    parse5 "^5.0.0"
+    parse5 "^6.0.0"
 
 eslint-plugin-node@11.0.0:
   version "11.0.0"
@@ -5099,10 +5099,10 @@ parse5@5.1.0:
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-5.1.0.tgz#c59341c9723f414c452975564c7c00a68d58acd2"
   integrity sha512-fxNG2sQjHvlVAYmzBZS9YlDp6PTSSDwa98vkD4QgVDDCAo84z5X1t5XyJQ62ImdLXx5NdIIfihey6xpum9/gRQ==
 
-parse5@^5.0.0:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/parse5/-/parse5-5.1.1.tgz#f68e4e5ba1852ac2cadc00f4555fff6c2abb6178"
-  integrity sha512-ugq4DFI0Ptb+WWjAdOK16+u/nHfiIrcE+sh8kZMaM0WllQKLI9rOUq6c2b7cwPkXdzfQESqvoqK6ug7U/Yyzug==
+parse5@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/parse5/-/parse5-6.0.0.tgz#d2ac3448289c84b49947d49a39f7bef6200fa6ba"
+  integrity sha512-lC0A+4DefTdRr+DLQlEwwZqndL9VzEjiuegI5bj3hp4bnzzwQldSqCpHv7+msRpSOHGJyJvkcCa4q15LMUJ8rg==
 
 pascalcase@^0.1.1:
   version "0.1.1"
