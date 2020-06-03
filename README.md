@@ -1,3 +1,6 @@
+# Deprecated
+This repo and its entire approach have been deprecated. Tauri no longer requires you to use webpack, and you should remove this module from your dependency tree.
+
 # tauri-webpack
 
 ![](https://img.shields.io/npm/v/@tauri-apps/tauri-webpack.svg) ![](https://img.shields.io/github/workflow/status/tauri-apps/tauri-webpack/Sanity%20Test?label=tests
